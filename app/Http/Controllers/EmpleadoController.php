@@ -24,7 +24,7 @@ class EmpleadoController extends Controller
     {
         return view('empleados.create', compact('oficina'));
     }
-
+    
 
     // Guardar un nuevo empleado en la base de datos
     public function store(Request $request, Oficina $oficina)
