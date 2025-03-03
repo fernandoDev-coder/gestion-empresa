@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crear Empleado</title>
 </head>
 
@@ -12,7 +11,7 @@
     <h1>Crear Empleado</h1>
 
     <!-- Formulario para crear un empleado -->
-    <form action="{{ route('oficinas.empleados.store', $oficina) }}" method="POST">
+    <form action="{{ route('empleados.store', $oficina) }}" method="POST">
         @csrf
 
         <label for="nombre">Nombre:</label>
