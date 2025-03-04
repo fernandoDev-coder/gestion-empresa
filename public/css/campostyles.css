@@ -1,0 +1,159 @@
+/* Reiniciar algunos estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body y configuración general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Encabezado */
+header {
+    width: 100%;
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Contenedor principal de la página */
+.container {
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+/* Estilos del formulario */
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+/* Estilo de los botones */
+.button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos adicionales para enlaces */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a.button {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Estilos para botones dentro de formularios */
+button[type="submit"],
+button.button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover,
+button.button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para la lista de empleados */
+.empleados {
+    margin-top: 20px;
+}
+
+.empleados ul {
+    list-style: none;
+    padding: 0;
+}
+
+.empleados li {
+    background: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.empleados li a {
+    color: #007BFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.empleados li a:hover {
+    text-decoration: underline;
+}
+
+/* Ajustes de alineación de botones */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
