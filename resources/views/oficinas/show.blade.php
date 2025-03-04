@@ -24,7 +24,10 @@
                 <p><strong>ID:</strong> {{ $oficina->id }}</p>
                 <p><strong>Nombre:</strong> {{ $oficina->nombre }}</p>
             </div>
-
+            <!-- Botón para agregar empleados -->
+            <a href="{{ route('empleados.create', ['oficina' => $oficina->id]) }}" class="button">
+                Agregar Empleado
+            </a>
             <!-- Mostrar empleados -->
             <div class="empleados">
                 <h3>Empleados:</h3>
@@ -43,11 +46,6 @@
                     </ul>
                 @endif
             </div>
-
-            <!-- Botón para agregar empleados -->
-            <a href="{{ route('empleados.create', ['oficina' => $oficina->id]) }}" class="button">
-                Agregar Empleado
-            </a>
 
             <!-- Botón para volver a la lista de oficinas -->
             <a href="{{ route('oficinas.index') }}" class="button">
