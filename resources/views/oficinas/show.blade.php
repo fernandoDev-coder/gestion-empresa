@@ -39,11 +39,12 @@
                             <li>
                                 <!-- Hacer clic sobre el nombre llevará a la página de edición del empleado -->
                                 <a href="{{ route('empleados.edit', $empleado) }}">
-                                    {{ $empleado->nombre }} - {{ $empleado->rol }}
+                                    {{ $empleado->nombre }} - {{ $empleado->dni }}
                                 </a>
                             </li>
                         @endforeach
                     </ul>
+
                 @endif
             </div>
 

@@ -45,11 +45,21 @@
                 <div class="form-group">
                     <label for="dni">DNI:</label>
                     <input type="text" id="dni" name="dni" required>
+                    <input type="text" id="dni" name="dni" required pattern="[0-9]{8}[A-Za-z]"
+                        title="El DNI debe contener 8 números seguidos de una letra">
+                    @error('dni')
+                        <p style="color: red;">{{ $message }}</p>
+                    @enderror
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" required
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                        title="El correo electrónico debe ser válido">
+                    @error('email')
+                        <p style="color: red;">{{ $message }}</p>
+                    @enderror
                 </div>
 
                 <!-- Campo oculto para el ID de la oficina -->
